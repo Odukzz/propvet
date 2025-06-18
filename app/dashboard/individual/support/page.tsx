@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion"
 import { HelpCircle, Mail, Phone } from "lucide-react"
 
+// Mocked FAQ entries to display in the accordion
 const faqs = [
   {
     question: "How long does the verification process take?",
@@ -39,6 +40,7 @@ export default function Support() {
   const router = useRouter()
   const { user, isAuthenticated } = useAuth()
 
+  // Redirect to login if not authenticated or not an individual user
   if (!isAuthenticated || user?.role !== 'individual') {
     router.push('/login')
     return null
@@ -46,15 +48,20 @@ export default function Support() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      {/* Sidebar */}
       <DashboardSidebar />
       
+      {/* Main Content */}
       <div className="lg:pl-64">
+        {/* Header */}
         <div className="flex h-14 items-center border-b bg-white dark:bg-gray-800 px-6">
           <h1 className="text-lg font-semibold">Support & FAQs</h1>
         </div>
 
         <main className="p-6">
+          {/* Support Contacts */}
           <div className="grid gap-6 md:grid-cols-2 mb-8">
+            {/* Phone Support Card */}
             <Card className="p-6">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="p-3 bg-green-100 rounded-full dark:bg-green-900/20">
@@ -68,6 +75,7 @@ export default function Support() {
               </div>
             </Card>
 
+            {/* Email Support Card */}
             <Card className="p-6">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="p-3 bg-green-100 rounded-full dark:bg-green-900/20">
@@ -83,6 +91,7 @@ export default function Support() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
+            {/* FAQ Section */}
             <div>
               <h2 className="text-xl font-semibold mb-6">Frequently Asked Questions</h2>
               <Accordion type="single" collapsible className="w-full">
@@ -95,15 +104,18 @@ export default function Support() {
               </Accordion>
             </div>
 
+            {/* Support Ticket Form */}
             <div>
               <Card className="p-6">
                 <h2 className="text-xl font-semibold mb-6">Contact Support</h2>
                 <form className="space-y-4">
+                  {/* Subject Field */}
                   <div>
                     <Label htmlFor="subject">Subject</Label>
                     <Input id="subject" placeholder="What can we help you with?" />
                   </div>
                   
+                  {/* Message Field */}
                   <div>
                     <Label htmlFor="message">Message</Label>
                     <Textarea
@@ -113,6 +125,7 @@ export default function Support() {
                     />
                   </div>
 
+                  {/* Submit Button */}
                   <Button className="w-full bg-green-600 hover:bg-green-700">
                     <HelpCircle className="h-4 w-4 mr-2" />
                     Submit Ticket

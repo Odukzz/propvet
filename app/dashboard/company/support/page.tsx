@@ -78,7 +78,7 @@ export default function Support() {
                 <div>
                   <h3 className="font-semibold">Priority Support Line</h3>
                   <p className="text-sm text-gray-500">Available 24/7</p>
-                  <p className="text-green-600 font-medium">+234 (0) 123 456 7890</p>
+                  <p className="text-green-600 font-medium">+234 123 456 7890</p>
                 </div>
               </div>
             </Card>
@@ -91,7 +91,7 @@ export default function Support() {
                 <div>
                   <h3 className="font-semibold">Email Support</h3>
                   <p className="text-sm text-gray-500">Response within 2 hours</p>
-                  <p className="text-green-600 font-medium">support@propertyverifyng.com</p>
+                  <p className="text-green-600 font-medium">support@propvet.com</p>
                 </div>
               </div>
             </Card>

@@ -20,7 +20,6 @@ export function SharedFooter() {
                 height={60.97}
                 className="rounded"
               />
-
             </Link>
             <p className="text-sm text-gray-500 dark:text-gray-400">
               Abuja's trusted property verification platform

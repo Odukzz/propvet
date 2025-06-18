@@ -115,9 +115,10 @@ const mockRequestData = {
   }
 }
 
+// ✅ Fixed generateStaticParams
 export async function generateStaticParams() {
   return Object.keys(mockRequestData).map((id) => ({
-    id,
+    params: { id }, // Wrapped in `params` to match the component's expected props
   }))
 }
 

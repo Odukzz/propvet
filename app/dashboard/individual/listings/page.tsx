@@ -22,7 +22,7 @@ const mockListings = [
   {
     id: "1",
     title: "Modern 3 Bedroom Apartment",
-    location: "Lekki Phase 1, Lagos",
+    location: "Gwarinpa, Abuja",
     price: "₦75,000,000",
     type: "Apartment",
     listingType: "for_sale",
@@ -31,14 +31,14 @@ const mockListings = [
     image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
     company: {
       id: "comp1",
-      name: "Prime Properties Ltd",
+      name: "Abuja Prime Properties",
       logo: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2"
     }
   },
   {
     id: "2",
     title: "Luxury 5 Bedroom Duplex",
-    location: "Banana Island, Lagos",
+    location: "Maitama, Abuja",
     price: "₦250,000,000",
     type: "House",
     listingType: "for_rent",
@@ -47,14 +47,14 @@ const mockListings = [
     image: "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
     company: {
       id: "comp2",
-      name: "Elite Homes Nigeria",
+      name: "Capital Elite Homes",
       logo: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2"
     }
   },
   {
     id: "3",
     title: "Executive 4 Bedroom Terrace",
-    location: "Victoria Island, Lagos",
+    location: "Wuse 2, Abuja",
     price: "₦120,000,000",
     type: "Terrace",
     listingType: "for_sale",
@@ -63,14 +63,14 @@ const mockListings = [
     image: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg",
     company: {
       id: "comp3",
-      name: "Victoria Estates",
+      name: "Victory Estates Abuja",
       logo: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2"
     }
   },
   {
     id: "4",
-    title: "Prime Commercial Land - 5 Hectares",
-    location: "Ibeju-Lekki, Lagos",
+    title: "Commercial Land - 5 Hectares",
+    location: "Jabi, Abuja",
     price: "₦500,000,000",
     type: "Commercial Land",
     listingType: "for_sale",
@@ -78,7 +78,7 @@ const mockListings = [
     image: "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg",
     company: {
       id: "comp4",
-      name: "Lagos Land Ventures",
+      name: "LandTech Ventures Abuja",
       logo: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2"
     }
   }

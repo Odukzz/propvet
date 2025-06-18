@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation'
 import { AdminRequestDetailClient } from './admin-request-detail-client'
 
-// Updated mock request data - Abuja only
 const mockRequestData = {
   "REQ001": {
     id: "REQ001",
@@ -115,11 +114,11 @@ const mockRequestData = {
   }
 }
 
-// ✅ Fixed generateStaticParams
+// ✅ Corrected generateStaticParams
 export async function generateStaticParams() {
   return Object.keys(mockRequestData).map((id) => ({
-    params: { id }, // Wrapped in `params` to match the component's expected props
-  }))
+    id: id,
+  }));
 }
 
 interface AdminRequestDetailProps {
